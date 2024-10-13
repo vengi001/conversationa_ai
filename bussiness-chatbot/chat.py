@@ -8,10 +8,6 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-import os
-
-print("Current Working Directory:", os.getcwd())
-print("Files in Directory:", os.listdir('.'))
 
 with open('bussiness-chatbot/intents.json', 'r') as intent_data:
     intents = json.load(intent_data)
