@@ -9,11 +9,11 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-with open('intents.json', 'r') as intent_data:
+with open('bussiness-chatbot/intents.json', 'r') as intent_data:
     intents = json.load(intent_data)
 
 bot_name = "ChatBot"
-model_path = "model.pth"
+model_path = "bussiness-chatbot/model.pth"
 
 data = torch.load(model_path)
 
