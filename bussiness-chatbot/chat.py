@@ -3,17 +3,17 @@ import json
 import torch
 from model import NeuralNet
 from utils import tokenize, bag_of_words
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
-with open('bussiness-chatbot/intents.json', 'r') as intent_data:
+with open('intents.json', 'r') as intent_data:
     intents = json.load(intent_data)
 
 bot_name = "ChatBot"
-model_path = "bussiness-chatbot/model.pth"
+model_path = "model.pth"
 
 data = torch.load(model_path)
 
@@ -35,6 +35,10 @@ def get_response(tag):
         
     return response
 
+@app.route('/', methods=["GET"])
+def home():
+    return render_template('chatbot.html')
+
 @app.route('/chat', methods=["POST"])
 def chat():
 
@@ -55,7 +59,7 @@ def chat():
         print(f"{bot_name}: {response}")
         return {'response': response}
     else:
-        intent = intents["intents"]["no_answer"]
+        intent = intents["intents"][-1]
         response = random.choice(intent["responses"])
         print(f"{bot_name}: Sorry, i don't understand")
         return {'response': response}
