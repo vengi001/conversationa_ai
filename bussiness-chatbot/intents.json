@@ -90,14 +90,14 @@
             "responses": ["Goodbye! Take care.", "See you next time!", "Happy to connect with you :)"]
         },
         {
-            "tag": "no_answer",
-            "patterns": [],
-            "responses": ["Sorry, I don't understand.", "Could you rephrase that?"]
-        },
-        {
             "tag": "color",
             "patterns":["Whats's your favourite color", "fav color", "which is your fav colour?"],
             "responses": ["I like sky-blue which resembles the calm mindset", "Could you rephrase that?"]
+        },
+        {
+            "tag": "no_answer",
+            "patterns": [],
+            "responses": ["Sorry, I don't understand.", "Could you rephrase that?"]
         }
     ]
 }
