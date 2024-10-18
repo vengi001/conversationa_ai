@@ -12,7 +12,7 @@
         },
         {
             "tag": "about_me",
-            "patterns": ["Tell me about yourself", "Who are you?", "What do you do?", "Introduce yourself"],
+            "patterns": ["Tell me about yourself", "Who are you?", "What do you do?", "Introduce yourself", "self-intro", "self intro", "self introduction"],
             "responses": [
                 "With 2.7 years of experience as a Python developer, I specialize in backend development and natural language processing, including the development of conversational chatbots. My technical skills include working with MongoDB, PostgreSQL, MySQL, and Git, allowing me to effectively contribute to a variety of projects.",
                 "As a Python developer with nearly three years of experience, I focus on backend development and natural language processing. My expertise encompasses building conversational chatbots and proficiency in various database technologies such as MongoDB, PostgreSQL, and MySQL, complemented by strong skills in Git.",
@@ -21,7 +21,7 @@
         },
         {
             "tag": "experience",
-            "patterns": ["What is your experience?", "Tell me about your work experience", "What kind of work have you done?"],
+            "patterns": ["What is your experience?", "Tell me about your work experience", "What kind of work have you done?", "tell about your experience"],
             "responses": [
                 "I have 2.7 years of experience in Python development, working on backend systems, chatbots, and automation.",
                 "I've developed chatbots, backend services, and also worked with NLP."
@@ -29,7 +29,7 @@
         },
         {
             "tag": "skills",
-            "patterns": ["What are your skills?", "Tell me about your skills", "What technologies do you know?"],
+            "patterns": ["What are your skills?", "Tell me about your skills", "What technologies do you know?", "skills"],
             "responses": [
                 "I possess proficiency in Python, along with frameworks such as Flask, FastAPI, and Django, as well as expertise in natural language processing, machine learning, and backend development.",
                 "Some of my skills include Python, chatbot development, working with APIs, NLP, and FusionAuth integration.",
@@ -42,7 +42,8 @@
             "tag": "projects",
             "patterns": [
                 "What are the projects you have done?", "Tell me about your projects", 
-                "Have you worked on chatbots?", "What kind of projects do you work on?"
+                "Have you worked on chatbots?", "What kind of projects do you work on?",
+                "projects"
             ],
             "responses": [
                 "I have contributed to various projects, including a payroll processing website, an EdTech proctor control system with proctor score calculations, and a digital imagery project focused on interactive image conversion. Additionally, I have worked on PDF template rendering, developed conversational AI, and implemented cancer cell classification using machine learning algorithms such as XGBoost, KNN, logistic regression, decision trees, and random forests.",
@@ -53,7 +54,7 @@
         },
         {
             "tag": "education",
-            "patterns": ["What is your educational background?", "Tell me about your education", "Where did you study?"],
+            "patterns": ["What is your educational background?", "Tell me about your education", "Where did you study?", "education"],
             "responses": [
                 "I hold a degree in Electronics and Communication and have obtained certifications in Python for Data Science, Natural Language Processing, Machine Learning Fundamentals, AWS Lambda, and more.",
                 "I possess a degree in Electronics and Communication, along with certifications in Python for Data Science, NLP, Machine Learning Fundamentals, and AWS Lambda, among others.",
@@ -62,7 +63,7 @@
         },
         {
             "tag": "contact_info",
-            "patterns": ["How can I contact you?", "What is your email?", "How do I get in touch?"],
+            "patterns": ["How can I contact you?", "What is your email?", "How do I get in touch?", "contact details", "contact info"],
             "responses": [
                 "You can reach me at vengateswarikannan235@gmail.com",
                 "Feel free to contact me through my email: vengateswarikannan235@gmail.com."
@@ -86,12 +87,12 @@
         },
         {
             "tag": "end-conversation",
-            "patterns": ["Bye", "Thank you", "Thanks", "Goodbye", "See you later"],
+            "patterns": ["Bye", "Thank you", "Thanks", "Goodbye", "See you later", "Tata"],
             "responses": ["Goodbye! Take care.", "See you next time!", "Happy to connect with you :)"]
         },
         {
             "tag": "color",
-            "patterns":["Whats's your favourite color", "fav color", "which is your fav colour?"],
+            "patterns":["Whats's your favourite color", "fav color", "which is your fav colour?", "color", "colour"],
             "responses": ["I like sky-blue which resembles the calm mindset", "Could you rephrase that?"]
         },
         {

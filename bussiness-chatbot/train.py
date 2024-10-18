@@ -18,7 +18,7 @@ class ChatDataset(Dataset):
     def __getitem__(self, index):
         return torch.tensor(self.x[index], dtype=torch.float32), torch.tensor(self.y[index], dtype=torch.long)
 
-with open('intents.json', 'r') as intent:
+with open('bussiness-chatbot/intents.json', 'r') as intent:
     intents = json.load(intent)
 
 all_words = []
