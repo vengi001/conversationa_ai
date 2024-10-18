@@ -17,6 +17,9 @@ class ChatDataset(Dataset):
 
     def __getitem__(self, index):
         return torch.tensor(self.x[index], dtype=torch.float32), torch.tensor(self.y[index], dtype=torch.long)
+    
+import nltk
+nltk.download('punkt_tab')
 
 with open('bussiness-chatbot/intents.json', 'r') as intent:
     intents = json.load(intent)
