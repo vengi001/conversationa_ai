@@ -66,4 +66,6 @@ def chat():
 
 
 if __name__ == "__main__":
+    import nltk
+    nltk.download('punkt_tab')
     app.run(host='0.0.0.0', port=5001, debug=True)
