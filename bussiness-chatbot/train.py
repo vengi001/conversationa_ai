@@ -2,7 +2,7 @@ import json
 import numpy as np
 import torch
 from sklearn.preprocessing import LabelEncoder
-from utils import tokenize, bag_of_words, stem
+from utils import lemmatize, tokenize, bag_of_words, stem
 from torch.utils.data import DataLoader, Dataset
 from model import NeuralNet
 import torch.nn as nn
@@ -35,7 +35,7 @@ for intent in intents["intents"]:
 
 
 ignore_words = ['?', '.', '!']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = [lemmatize(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 # label_encoder = LabelEncoder()
